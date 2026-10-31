@@ -1,33 +1,47 @@
-<p align="center">
-    <img alt="AI Engineering Interview Questions Company Wise" src="https://github.com/pallavi-shekhar/ai-engineering-interview-questions-company-wise/blob/main/assets/banner.png">
+<div align="center">
+
+<img alt="AI Engineering Interview Questions Company Wise" src="./assets/banner.png" width="640" />
+
+<h1>AI Engineering Interview Questions Company Wise</h1>
+
+<p>
+<b>Your Cheat Sheet For AI Engineering Interviews at Top AI Companies</b>
 </p>
 
-# AI Engineering Interview Questions Company Wise
+<p>
+Real interview questions asked in AI Engineering interviews at 41 companies, organized company by company.<br />
+Answers are linked wherever we have them.
+</p>
 
-> AI Engineering Interview Questions Company Wise - Your Cheat Sheet For AI Engineering Interviews at Top AI Companies
->
-> Real interview questions asked in AI Engineering interviews at 35 companies, organized company by company, with answers linked wherever we have them.
->
-> These interview questions and answers are helpful for roles such as:
->
-> - AI Engineer
-> - Gen AI Engineer
-> - LLM Engineer
-> - Agentic AI Engineer
-> - AI Agent Engineer
-> - Machine Learning Engineer
-> - Research Engineer
-> - Applied Scientist
-> - Forward Deployed Engineer
-> - AI Solutions Architect
-> - AI Platform Engineer
-> - Applied AI Engineer
-> - LLM Inference and Performance Engineer
-> - MLOps Engineer
-> - LLMOps Engineer
+<p>
+<a href="#common-questions-asked-across-companies">Start Reading</a> •
+<a href="#frontier-ai-labs">Browse by Company</a> •
+<a href="./README.md">中文版</a> •
+<a href="https://outcomeschool.com/program/ai-and-machine-learning">Outcome School Program</a>
+</p>
+
+<p>
+41 companies · 10 topics · answer links included · English original
+</p>
+
+</div>
+
+---
+
+## What is this?
+
+A company-by-company collection of real AI Engineering interview questions, sourced from publicly reported interview experiences. No confidential material: wherever we have an answer, the link sits right under the question.
+
+Useful for roles such as: AI Engineer, Gen AI Engineer, LLM Engineer, Agentic AI Engineer, AI Agent Engineer, Machine Learning Engineer, Research Engineer, Applied Scientist, Forward Deployed Engineer, AI Solutions Architect, AI Platform Engineer, Applied AI Engineer, LLM Inference and Performance Engineer, MLOps Engineer, LLMOps Engineer.
+
+| Version | File | Notes |
+| --- | --- | --- |
+| English original | [README.en.md](./README.en.md) | Source content from [Outcome School](https://outcomeschool.com) |
+| Chinese translation | [README.md](./README.md) | Full Chinese translation, same questions and answer links |
 
 ## Table of Contents
 
+- [What is this?](#what-is-this)
 - [How to use this](#how-to-use-this)
 - [Common Questions Asked Across Companies](#common-questions-asked-across-companies)
   - [LLM Internals and Architecture](#llm-internals-and-architecture)
@@ -60,6 +74,13 @@
   - [NVIDIA](#nvidia)
   - [Tesla](#tesla)
   - [Consumer-Scale ML Companies (Uber, Netflix, LinkedIn, Airbnb, Pinterest, Spotify)](#consumer-scale-ml-companies-uber-netflix-linkedin-airbnb-pinterest-spotify)
+- [Chinese Internet Companies](#chinese-internet-companies)
+  - [ByteDance](#bytedance)
+  - [Tencent](#tencent)
+  - [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud)
+  - [DiDi](#didi)
+  - [JD.com](#jdcom)
+  - [Meituan](#meituan)
 - [AI Infrastructure and Platform Companies](#ai-infrastructure-and-platform-companies)
   - [Databricks](#databricks)
   - [Groq](#groq)
@@ -80,17 +101,7 @@
   - [Waymo](#waymo)
 - [Forward-Deployed and Enterprise AI](#forward-deployed-and-enterprise-ai)
   - [Palantir](#palantir)
-
-### Prepared and maintained by [Outcome School](https://outcomeschool.com)
-
-> AI and Machine Learning Program by Outcome School: [AI and Machine Learning Program](https://outcomeschool.com/program/ai-and-machine-learning)
-
-### Follow Outcome School
-
-- [YouTube](https://youtube.com/@OutcomeSchool)
-- [X/Twitter](https://x.com/outcome_school)
-- [LinkedIn](https://www.linkedin.com/company/outcomeschool)
-- [GitHub](https://github.com/OutcomeSchool)
+- [Prepared and maintained by Outcome School](#prepared-and-maintained-by-outcome-school)
 
 ---
 
@@ -118,16 +129,16 @@
 - Explain scaled dot-product attention and why the 1/sqrt(d_k) scaling factor matters.
   - Answer: [Math behind √dₖ Scaling Factor in Attention](https://outcomeschool.com/blog/scaling-dot-product-attention) and [Math behind Attention - Q, K, and V](https://outcomeschool.com/blog/math-behind-attention-qkv)
 - What is the KV cache, and what are its memory implications at scale? Derive the formula.
-  - Asked at: [OpenAI](#openai), [xAI](#xai), [Mistral AI](#mistral-ai), [Amazon](#amazon-aws), [Apple](#apple), [NVIDIA](#nvidia), [Together AI](#together-ai), [Character.AI](#characterai)
+  - Asked at: [OpenAI](#openai), [xAI](#xai), [Mistral AI](#mistral-ai), [Amazon](#amazon-aws), [Apple](#apple), [NVIDIA](#nvidia), [Together AI](#together-ai), [Character.AI](#characterai), [ByteDance](#bytedance), [Tencent](#tencent), [Meituan](#meituan), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud)
   - Answer: [What is KV Cache in LLMs?](https://outcomeschool.com/blog/kv-cache-in-llms) and [KV Cache Compression](https://outcomeschool.com/blog/kv-cache-compression)
 - What are Multi-Query Attention (MQA) and Grouped-Query Attention (GQA), and what do they trade away?
-  - Asked at: [Meta](#meta-superintelligence-labs-fair-llama), [Mistral AI](#mistral-ai)
+  - Asked at: [Meta](#meta-superintelligence-labs-fair-llama), [Mistral AI](#mistral-ai), [ByteDance](#bytedance), [Meituan](#meituan), [DiDi](#didi)
   - Answer: [Grouped Query Attention](https://outcomeschool.com/blog/grouped-query-attention)
 - What is Multi-head Latent Attention (MLA) and why did DeepSeek introduce it?
-  - Asked at: [DeepSeek](#deepseek), [Moonshot AI](#moonshot-ai-kimi)
+  - Asked at: [DeepSeek](#deepseek), [Moonshot AI](#moonshot-ai-kimi), [ByteDance](#bytedance), [Meituan](#meituan)
   - Answer: [KV Cache Compression](https://outcomeschool.com/blog/kv-cache-compression)
 - Explain FlashAttention. It does not reduce FLOPs, so why is it faster?
-  - Asked at: [Together AI](#together-ai)
+  - Asked at: [Together AI](#together-ai), [Tencent](#tencent)
   - Answer: [Decoding Flash Attention in LLMs](https://outcomeschool.com/blog/decoding-flash-attention)
 - How does Byte Pair Encoding work, and what are its failure modes (numbers, code, non-Latin scripts)?
   - Asked at: [Alibaba](#alibaba-qwen), [Sarvam AI](#sarvam-ai), [Hugging Face](#hugging-face)
@@ -135,12 +146,12 @@
 - What is positional encoding in transformers, and how has it evolved (sinusoidal → learned → RoPE → ALiBi)?
   - Answer: [Positional Embeddings in LLMs](https://outcomeschool.substack.com/p/positional-embeddings-in-llms) and [Math Behind RoPE (Rotary Position Embedding)](https://outcomeschool.com/blog/math-behind-rope-rotary-position-embedding)
 - Explain RoPE and how position interpolation / YaRN extend context beyond the trained length.
-  - Asked at: [Meta](#meta-superintelligence-labs-fair-llama), [Moonshot AI](#moonshot-ai-kimi), [Alibaba](#alibaba-qwen)
+  - Asked at: [Meta](#meta-superintelligence-labs-fair-llama), [Moonshot AI](#moonshot-ai-kimi), [Alibaba](#alibaba-qwen), [Tencent](#tencent), [Meituan](#meituan)
   - Answer: [Math Behind RoPE (Rotary Position Embedding)](https://outcomeschool.com/blog/math-behind-rope-rotary-position-embedding)
 - What do the Chinchilla scaling laws say, and how do they differ from earlier scaling intuitions?
   - Asked at: [Anthropic](#anthropic)
 - What is a mixture-of-experts architecture and how does it scale capacity without scaling FLOPs?
-  - Asked at: [Mistral AI](#mistral-ai), [Cohere](#cohere), [DeepSeek](#deepseek), [Moonshot AI](#moonshot-ai-kimi), [Zhipu AI](#zhipu-ai-glm), [Alibaba](#alibaba-qwen)
+  - Asked at: [Mistral AI](#mistral-ai), [Cohere](#cohere), [DeepSeek](#deepseek), [Moonshot AI](#moonshot-ai-kimi), [Zhipu AI](#zhipu-ai-glm), [Alibaba](#alibaba-qwen), [Tencent](#tencent), [Meituan](#meituan), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud)
   - Answer: [Mixture of Experts Explained](https://outcomeschool.com/blog/mixture-of-experts)
 - Explain the difference between pre-training, supervised fine-tuning and preference optimisation.
   - Asked at: [Meta](#meta-superintelligence-labs-fair-llama), [Scale AI](#scale-ai)
@@ -163,7 +174,7 @@
 ### Inference, Serving and GPU Performance
 
 - Explain the prefill and decode phases. Why is prefill compute-bound and decode memory-bandwidth-bound?
-  - Asked at: [Moonshot AI](#moonshot-ai-kimi), [NVIDIA](#nvidia), [Together AI](#together-ai)
+  - Asked at: [Moonshot AI](#moonshot-ai-kimi), [NVIDIA](#nvidia), [Together AI](#together-ai), [ByteDance](#bytedance), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud)
   - Answer: [Prefill vs Decode: LLM Inference Optimization](https://outcomeschool.com/blog/prefill-vs-decode-llm-inference-optimization)
 - What is continuous (in-flight) batching and why did it replace static batching?
   - Asked at: [Anthropic](#anthropic), [xAI](#xai), [Mistral AI](#mistral-ai), [NVIDIA](#nvidia), [Together AI](#together-ai)
@@ -172,10 +183,10 @@
   - Asked at: [NVIDIA](#nvidia), [Together AI](#together-ai)
   - Answer: [Paged Attention in LLMs](https://outcomeschool.com/blog/paged-attention-in-llms) and [How does vLLM work?](https://outcomeschool.com/blog/how-does-vllm-work)
 - What is speculative decoding? Why is output quality preserved, and when does it not help?
-  - Asked at: [NVIDIA](#nvidia), [Together AI](#together-ai)
+  - Asked at: [NVIDIA](#nvidia), [Together AI](#together-ai), [ByteDance](#bytedance)
   - Answer: [Speculative Decoding](https://outcomeschool.com/blog/speculative-decoding)
 - Explain prefix caching / prompt caching. When should you use it, and what invalidates a cached prefix?
-  - Asked at: [Moonshot AI](#moonshot-ai-kimi), [Character.AI](#characterai)
+  - Asked at: [Moonshot AI](#moonshot-ai-kimi), [Character.AI](#characterai), [ByteDance](#bytedance)
   - Answer: [How does Prompt Caching work?](https://outcomeschool.com/blog/how-does-prompt-caching-work)
 - Compare FP16, BF16, FP8, INT8, INT4 and FP4 for serving. What breaks at each step down?
   - Asked at: [Mistral AI](#mistral-ai), [Apple](#apple), [NVIDIA](#nvidia), [Together AI](#together-ai), [Character.AI](#characterai)
@@ -183,7 +194,7 @@
 - Compare tensor, pipeline, data, sequence and expert parallelism. When do you combine them?
   - Asked at: [Google DeepMind](#google-deepmind-and-google-ai), [Meta](#meta-superintelligence-labs-fair-llama), [Amazon](#amazon-aws), [NVIDIA](#nvidia)
 - Estimate the GPU memory needed to serve a 70B model: weights, KV cache, activations, fragmentation.
-  - Asked at: [NVIDIA](#nvidia)
+  - Asked at: [NVIDIA](#nvidia), [ByteDance](#bytedance)
   - Answer: [What is KV Cache in LLMs?](https://outcomeschool.com/blog/kv-cache-in-llms) and [Paged Attention in LLMs](https://outcomeschool.com/blog/paged-attention-in-llms)
 - What are TTFT, TPOT, ITL and throughput, and how do they trade against each other?
   - Asked at: [Microsoft](#microsoft), [Apple](#apple), [Perplexity](#perplexity)
@@ -192,7 +203,7 @@
   - Asked at: [NVIDIA](#nvidia), [Together AI](#together-ai)
   - Answer: [Prefill vs Decode: LLM Inference Optimization](https://outcomeschool.com/blog/prefill-vs-decode-llm-inference-optimization)
 - When would you choose vLLM vs SGLang vs TensorRT-LLM vs a custom stack?
-  - Asked at: [NVIDIA](#nvidia), [Together AI](#together-ai)
+  - Asked at: [NVIDIA](#nvidia), [Together AI](#together-ai), [Tencent](#tencent), [ByteDance](#bytedance)
   - Answer: [How does vLLM work?](https://outcomeschool.com/blog/how-does-vllm-work), [How does SGLang work?](https://outcomeschool.com/blog/how-does-sglang-work) and [How does TensorRT-LLM work?](https://outcomeschool.com/blog/how-does-tensorrt-llm-work)
 - How would you cut LLM serving cost by 10x? Enumerate every lever and rank them.
   - Asked at: [Microsoft](#microsoft), [Amazon](#amazon-aws), [NVIDIA](#nvidia), [Cursor](#cursor-anysphere)
@@ -201,7 +212,7 @@
   - Asked at: [OpenAI](#openai), [Amazon](#amazon-aws), [Databricks](#databricks), [Perplexity](#perplexity)
 - What is chunked prefill, and why does it improve tail latency under mixed traffic?
 - Explain disaggregated prefill/decode serving and when it pays for itself.
-  - Asked at: [Moonshot AI](#moonshot-ai-kimi), [Groq](#groq)
+  - Asked at: [Moonshot AI](#moonshot-ai-kimi), [Groq](#groq), [ByteDance](#bytedance)
   - Answer: [Prefill-Decode Disaggregation in LLM Inference](https://outcomeschool.com/blog/prefill-decode-disaggregation)
 
 ### RAG and Retrieval
@@ -210,10 +221,10 @@
   - Asked at: [Glean](#glean)
   - Answer: [Chunking Strategies for RAG](https://outcomeschool.com/blog/chunking-strategies-for-rag)
 - How do you choose between a sparse retriever (BM25) and a dense retriever? When do you need both?
-  - Asked at: [Microsoft](#microsoft), [Perplexity](#perplexity), [Glean](#glean)
+  - Asked at: [Microsoft](#microsoft), [Perplexity](#perplexity), [Glean](#glean), [Tencent](#tencent), [JD.com](#jdcom), [Meituan](#meituan), [DiDi](#didi)
   - Answer: [How does Hybrid Search work?](https://outcomeschool.com/blog/how-does-hybrid-search-work)
 - What is a reranker, when should you use one, and what does a cross-encoder cost you?
-  - Asked at: [Cohere](#cohere), [Microsoft](#microsoft), [Perplexity](#perplexity)
+  - Asked at: [Cohere](#cohere), [Microsoft](#microsoft), [Perplexity](#perplexity), [JD.com](#jdcom), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud)
   - Answer: [How does a Reranker work?](https://outcomeschool.com/blog/how-does-a-reranker-work)
 - How would you evaluate the quality of a RAG pipeline: retrieval and generation separately?
   - Asked at: [Cohere](#cohere)
@@ -225,45 +236,48 @@
 - What causes semantic drift in embedding search and how do you detect it?
   - Asked at: [Cohere](#cohere)
 - Design permission-aware retrieval: users must never see content they can't access in the source system.
-  - Asked at: [Microsoft](#microsoft), [Databricks](#databricks), [Glean](#glean), [Palantir](#palantir)
+  - Asked at: [Microsoft](#microsoft), [Databricks](#databricks), [Glean](#glean), [Palantir](#palantir), [ByteDance](#bytedance)
 - Compare HNSW, IVF-PQ and flat indexes. How do you pick, and what does recall@k cost in latency?
+  - Asked at: [Tencent](#tencent), [Meituan](#meituan), [JD.com](#jdcom)
   - Answer: [How does Approximate Nearest Neighbor (ANN) search work?](https://outcomeschool.com/blog/how-does-approximate-nearest-neighbor-ann-search-work) and [How does a Vector Database work?](https://outcomeschool.com/blog/how-does-a-vector-database-work)
 - How do you handle tables, figures and multi-column PDFs in a retrieval pipeline?
 - How do you keep an index fresh when the underlying corpus changes continuously?
-  - Asked at: [Perplexity](#perplexity), [Cursor](#cursor-anysphere)
+  - Asked at: [Perplexity](#perplexity), [Cursor](#cursor-anysphere), [ByteDance](#bytedance)
 - How do you attribute every claim in a generated answer to a specific retrieved span?
   - Asked at: [Perplexity](#perplexity), [Harvey](#harvey), [Abridge](#abridge)
 
 ### Agents and Tool Use
 
 - Explain the ReAct pattern and what it solves over chain-of-thought alone.
+  - Asked at: [ByteDance](#bytedance), [Tencent](#tencent), [Meituan](#meituan)
   - Answer: [ReAct Agent](https://outcomeschool.com/blog/react-agent) and [How does Chain-of-Thought (CoT) Prompting work?](https://outcomeschool.com/blog/how-does-chain-of-thought-prompting-work)
 - How do you handle tool-call errors, timeouts and retries in an agentic loop?
   - Asked at: [OpenAI](#openai), [Cognition](#cognition-devin-windsurf)
   - Answer: [AI Agent Loop](https://outcomeschool.com/blog/ai-agent-loop)
 - What is the difference between structured output and function calling?
-  - Asked at: [Mistral AI](#mistral-ai), [Apple](#apple)
+  - Asked at: [Mistral AI](#mistral-ai), [Apple](#apple), [JD.com](#jdcom), [Meituan](#meituan), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud)
   - Answer: [How does Function Calling work in LLMs?](https://outcomeschool.com/blog/how-does-function-calling-work-in-llms)
 - What is MCP (Model Context Protocol) and how does it differ from traditional function calling?
-  - Asked at: [Microsoft](#microsoft)
+  - Asked at: [Microsoft](#microsoft), [ByteDance](#bytedance), [JD.com](#jdcom), [Meituan](#meituan), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud)
   - Answer: Explained in this video: [AI Engineering Explained: LLM, RAG, MCP, Agent, Fine-Tuning, Quantization](https://www.youtube.com/watch?v=lnfWvX66FUk) and [What is MCP (Model Context Protocol)?](https://outcomeschool.com/blog/what-is-mcp-model-context-protocol)
 - How many tools is too many? How do you design tool schemas an LLM can actually use correctly?
   - Asked at: [Anthropic](#anthropic), [Cognition](#cognition-devin-windsurf)
   - Answer: Explained in this video: [AI Engineering Explained: LLM, RAG, MCP, Agent, Fine-Tuning, Quantization](https://www.youtube.com/watch?v=lnfWvX66FUk)
 - How does multi-agent orchestration work, and when does it break down?
-  - Asked at: [Cognition](#cognition-devin-windsurf)
+  - Asked at: [Cognition](#cognition-devin-windsurf), [ByteDance](#bytedance), [Meituan](#meituan), [JD.com](#jdcom), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud)
   - Answer: [Multi-Agent Systems](https://outcomeschool.com/blog/multi-agent-systems) and [AI Orchestration](https://outcomeschool.com/blog/ai-orchestration)
 - Design memory for a long-running agent: what do you store, where, and how do you retrieve it?
-  - Asked at: [Anthropic](#anthropic)
+  - Asked at: [Anthropic](#anthropic), [JD.com](#jdcom), [ByteDance](#bytedance)
   - Answer: [AI Agent Memory](https://outcomeschool.com/blog/ai-agent-memory)
 - How does an agent decide when to call a tool versus answer from its own knowledge?
   - Answer: [How does Function Calling work in LLMs?](https://outcomeschool.com/blog/how-does-function-calling-work-in-llms)
 - What makes an agent loop terminate correctly? How do you bound cost and steps?
+  - Asked at: [ByteDance](#bytedance), [Tencent](#tencent), [Meituan](#meituan)
   - Answer: [AI Agent Loop](https://outcomeschool.com/blog/ai-agent-loop) and [Fix an infinite loop in an AI agent](https://www.linkedin.com/posts/pallavi-shekhar_ai-aiagents-machinelearning-share-7440257380707364864-5Ycc)
 - How do you make an agent's actions reversible, or at least auditable, in a production system?
-  - Asked at: [Palantir](#palantir)
+  - Asked at: [Palantir](#palantir), [JD.com](#jdcom), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud)
 - Design human-in-the-loop approval for an agent that takes consequential actions.
-  - Asked at: [OpenAI](#openai), [Palantir](#palantir)
+  - Asked at: [OpenAI](#openai), [Palantir](#palantir), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud), [Tencent](#tencent)
 - Your agent drifts after a long run and confidently works on the wrong thing. Diagnose it.
   - Asked at: [Cognition](#cognition-devin-windsurf)
 
@@ -272,12 +286,13 @@
 - Walk me through RLHF end to end: reward model, policy optimisation, KL penalty.
   - Answer: [Reinforcement Learning from Human Feedback (RLHF)](https://outcomeschool.com/blog/reinforcement-learning-from-human-feedback-rlhf) and [Proximal Policy Optimization (PPO)](https://outcomeschool.com/blog/proximal-policy-optimization-ppo)
 - What is DPO and why did it displace PPO-based RLHF at many labs? When is online RL still better?
-  - Asked at: [Hugging Face](#hugging-face), [Scale AI](#scale-ai)
+  - Asked at: [Hugging Face](#hugging-face), [Scale AI](#scale-ai), [Tencent](#tencent), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud), [Meituan](#meituan)
   - Answer: [Direct Preference Optimization (DPO)](https://outcomeschool.com/blog/direct-preference-optimization-dpo)
 - Explain GRPO and why dropping the value network matters at scale.
-  - Asked at: [DeepSeek](#deepseek)
+  - Asked at: [DeepSeek](#deepseek), [ByteDance](#bytedance), [Tencent](#tencent), [Meituan](#meituan), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud)
   - Answer: [Group Relative Policy Optimization (GRPO)](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
 - Explain the LoRA decomposition mathematically. Why does it work, and how do you choose the rank r?
+  - Asked at: [Meituan](#meituan), [Tencent](#tencent), [JD.com](#jdcom)
   - Answer: [LoRA - Low-Rank Adaptation of LLMs](https://outcomeschool.com/blog/lora-low-rank-adaptation-of-llms)
 - How does QLoRA achieve its memory reduction, and what are the quantization trade-offs?
   - Asked at: [Hugging Face](#hugging-face)
@@ -289,7 +304,7 @@
   - Asked at: [Mistral AI](#mistral-ai)
   - Answer: [Continual Learning in LLMs](https://outcomeschool.com/blog/continual-learning-in-llms)
 - Prompting, RAG or fine-tuning: give me your decision framework with cost and latency attached.
-  - Asked at: [OpenAI](#openai), [Mistral AI](#mistral-ai), [Cohere](#cohere), [Microsoft](#microsoft), [Databricks](#databricks), [Glean](#glean)
+  - Asked at: [OpenAI](#openai), [Mistral AI](#mistral-ai), [Cohere](#cohere), [Microsoft](#microsoft), [Databricks](#databricks), [Glean](#glean), [DiDi](#didi), [JD.com](#jdcom), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud), [Tencent](#tencent)
   - Answer: Explained in this video: [AI Engineering Explained: LLM, RAG, MCP, Agent, Fine-Tuning, Quantization](https://www.youtube.com/watch?v=lnfWvX66FUk)
 - Do the GPU memory maths for full fine-tuning a 7B model in bf16 with Adam. Now with LoRA.
   - Asked at: [Mistral AI](#mistral-ai), [Hugging Face](#hugging-face)
@@ -297,7 +312,7 @@
   - Asked at: [Zhipu AI](#zhipu-ai-glm), [Alibaba](#alibaba-qwen), [Sarvam AI](#sarvam-ai), [Scale AI](#scale-ai)
   - Answer: [Group Relative Policy Optimization (GRPO)](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
 - Explain reward hacking in RLHF and how labs address it.
-  - Asked at: [Scale AI](#scale-ai)
+  - Asked at: [Scale AI](#scale-ai), [ByteDance](#bytedance)
   - Answer: [Reinforcement Learning from Human Feedback (RLHF)](https://outcomeschool.com/blog/reinforcement-learning-from-human-feedback-rlhf)
 - What is distillation, and how do you build a strong small model from a large one?
   - Asked at: [Alibaba](#alibaba-qwen)
@@ -306,12 +321,12 @@
 ### Evaluation and Observability
 
 - Design an LLM-as-judge evaluation. What are its known biases and how do you correct for them?
-  - Asked at: [Perplexity](#perplexity)
+  - Asked at: [Perplexity](#perplexity), [ByteDance](#bytedance), [DiDi](#didi)
   - Answer: [LLM as a Judge](https://outcomeschool.com/blog/llm-as-a-judge)
 - How do you build an eval set when there is no labelled ground truth and experts are expensive?
   - Asked at: [Cohere](#cohere), [Harvey](#harvey)
 - How do you detect and measure hallucinations in a production RAG system?
-  - Asked at: [Anthropic](#anthropic), [OpenAI](#openai), [Cursor](#cursor-anysphere)
+  - Asked at: [Anthropic](#anthropic), [OpenAI](#openai), [Cursor](#cursor-anysphere), [ByteDance](#bytedance), [DiDi](#didi), [Meituan](#meituan)
 - Design the regression gate that decides whether a prompt or model change ships.
   - Asked at: [Anthropic](#anthropic)
 - Why do benchmark scores improve while users say the system got worse? Enumerate the reasons.
@@ -325,7 +340,7 @@
 - Design online evaluation: what do you log, what do you sample, and what do you A/B?
   - Asked at: [Perplexity](#perplexity)
 - How would you evaluate an agent, as opposed to a single model response?
-  - Asked at: [Moonshot AI](#moonshot-ai-kimi), [Zhipu AI](#zhipu-ai-glm), [Scale AI](#scale-ai), [Cognition](#cognition-devin-windsurf)
+  - Asked at: [Moonshot AI](#moonshot-ai-kimi), [Zhipu AI](#zhipu-ai-glm), [Scale AI](#scale-ai), [Cognition](#cognition-devin-windsurf), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud), [ByteDance](#bytedance), [Meituan](#meituan)
   - Answer: [AI Agent Evaluation](https://outcomeschool.com/blog/ai-agent-evaluation)
 
 ### Safety, Security and Responsible AI
@@ -355,10 +370,10 @@
 ### Multimodal, Speech and Voice AI
 
 - How do vision-language models get images into an LLM: projector, cross-attention, or native tokens?
-  - Asked at: [Meta](#meta-superintelligence-labs-fair-llama), [Alibaba](#alibaba-qwen)
+  - Asked at: [Meta](#meta-superintelligence-labs-fair-llama), [Alibaba](#alibaba-qwen), [Tencent](#tencent)
   - Answer: [Multimodal AI](https://outcomeschool.com/blog/multimodal-ai) and [Decoding Vision Transformer (ViT)](https://outcomeschool.com/blog/decoding-vision-transformer-vit)
 - What changes when you move from images to video?
-  - Asked at: [Meta](#meta-superintelligence-labs-fair-llama)
+  - Asked at: [Meta](#meta-superintelligence-labs-fair-llama), [ByteDance](#bytedance)
 - Budget the latency for a real-time voice agent: VAD, ASR, LLM, TTS, network. Where does the time go?
   - Asked at: [Sarvam AI](#sarvam-ai), [ElevenLabs](#elevenlabs)
   - Answer: [Design a Real-Time Voice AI Agent](https://outcomeschool.com/blog/design-a-real-time-voice-ai-agent)
@@ -382,14 +397,14 @@
 ### AI System Design
 
 - Design an enterprise RAG assistant over 10M documents with per-user permissions.
-  - Asked at: [OpenAI](#openai), [Microsoft](#microsoft), [Amazon](#amazon-aws), [Databricks](#databricks), [Scale AI](#scale-ai)
+  - Asked at: [OpenAI](#openai), [Microsoft](#microsoft), [Amazon](#amazon-aws), [Databricks](#databricks), [Scale AI](#scale-ai), [ByteDance](#bytedance), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud)
 - Design a code assistant: repo indexing, context assembly, edit application, evaluation.
-  - Asked at: [Cursor](#cursor-anysphere)
+  - Asked at: [Cursor](#cursor-anysphere), [ByteDance](#bytedance), [Tencent](#tencent), [Meituan](#meituan), [Alibaba (Taobao/Tmall, Alibaba Cloud)](#alibaba-taobaotmall-alibaba-cloud)
   - Answer: [How does Cursor work?](https://outcomeschool.com/blog/how-does-cursor-work) and [How does Claude Code work?](https://outcomeschool.com/blog/how-does-claude-code-work)
 - Design a customer-support agent that can take real actions, with escalation to humans.
-  - Asked at: [Consumer-Scale ML Companies](#consumer-scale-ml-companies-uber-netflix-linkedin-airbnb-pinterest-spotify), [Sierra](#sierra)
+  - Asked at: [Consumer-Scale ML Companies](#consumer-scale-ml-companies-uber-netflix-linkedin-airbnb-pinterest-spotify), [Sierra](#sierra), [DiDi](#didi), [JD.com](#jdcom), [Meituan](#meituan)
 - Design semantic search over a large product catalogue.
-  - Asked at: [Character.AI](#characterai)
+  - Asked at: [Character.AI](#characterai), [JD.com](#jdcom)
   - Answer: [How does Semantic Search work?](https://outcomeschool.com/blog/how-does-semantic-search-work)
 - Design a content-moderation system combining classifiers and LLMs.
   - Asked at: [Meta](#meta-superintelligence-labs-fair-llama)
@@ -400,19 +415,19 @@
 - Design a meeting assistant: recording, diarisation, summary, action items, integrations.
   - Asked at: [Microsoft](#microsoft)
 - Design an LLM gateway: routing across providers, failover, caching, budgets and rate limits.
-  - Asked at: [Perplexity](#perplexity), [Palantir](#palantir)
+  - Asked at: [Perplexity](#perplexity), [Palantir](#palantir), [Tencent](#tencent), [JD.com](#jdcom)
   - Answer: [LLM Routing](https://outcomeschool.com/blog/llm-routing) and [How does Semantic Caching work?](https://outcomeschool.com/blog/how-does-semantic-caching-work)
 - Design the serving stack for a consumer chat assistant at hundreds of millions of users.
-  - Asked at: [Anthropic](#anthropic), [OpenAI](#openai), [Google DeepMind](#google-deepmind-and-google-ai), [Meta](#meta-superintelligence-labs-fair-llama), [xAI](#xai)
+  - Asked at: [Anthropic](#anthropic), [OpenAI](#openai), [Google DeepMind](#google-deepmind-and-google-ai), [Meta](#meta-superintelligence-labs-fair-llama), [xAI](#xai), [ByteDance](#bytedance), [Tencent](#tencent)
   - Answer: [Inside ChatGPT: What Happens After You Hit Enter](https://outcomeschool.substack.com/p/inside-chatgpt-what-happens-after) and [LLM Inference Optimization](https://outcomeschool.com/blog/llm-inference-optimization)
 
 ### Coding and Data Structures
 
 - Implement scaled dot-product attention with a causal mask, from scratch, in NumPy or PyTorch.
-  - Asked at: [Anthropic](#anthropic), [Google DeepMind](#google-deepmind-and-google-ai), [Amazon](#amazon-aws)
+  - Asked at: [Anthropic](#anthropic), [Google DeepMind](#google-deepmind-and-google-ai), [Amazon](#amazon-aws), [ByteDance](#bytedance), [Meituan](#meituan), [DiDi](#didi)
   - Answer: [Math behind Attention - Q, K, and V](https://outcomeschool.com/blog/math-behind-attention-qkv) and [Causal Masking in Attention](https://outcomeschool.com/blog/causal-masking-in-attention)
 - Implement multi-head attention, then convert it to grouped-query attention.
-  - Asked at: [Google DeepMind](#google-deepmind-and-google-ai), [Mistral AI](#mistral-ai), [Alibaba](#alibaba-qwen)
+  - Asked at: [Google DeepMind](#google-deepmind-and-google-ai), [Mistral AI](#mistral-ai), [Alibaba](#alibaba-qwen), [ByteDance](#bytedance), [Meituan](#meituan)
   - Answer: [Multi-Head Attention in Transformers](https://outcomeschool.com/blog/multi-head-attention-in-transformers) and [Grouped Query Attention](https://outcomeschool.com/blog/grouped-query-attention)
 - Implement a KV cache and single-step decode.
   - Asked at: [Moonshot AI](#moonshot-ai-kimi)
@@ -429,7 +444,7 @@
 - Write an async batch processor over an API with concurrency limits, retries with jitter and error isolation.
   - Asked at: [Anthropic](#anthropic), [Perplexity](#perplexity)
 - Write a streaming SSE/JSON parser that handles arbitrary chunk boundaries.
-  - Asked at: [Cohere](#cohere)
+  - Asked at: [Cohere](#cohere), [DiDi](#didi), [JD.com](#jdcom)
   - Answer: [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
 - Implement a text chunker with overlap that never splits a semantic unit.
   - Asked at: [Harvey](#harvey)
@@ -437,7 +452,7 @@
 - Implement cosine similarity search over embeddings, then explain why you would not ship it.
   - Answer: [How does a Vector Database work?](https://outcomeschool.com/blog/how-does-a-vector-database-work)
 - Implement a minimal agent loop with tool dispatch, error handling and a step budget.
-  - Asked at: [Cognition](#cognition-devin-windsurf)
+  - Asked at: [Cognition](#cognition-devin-windsurf), [ByteDance](#bytedance), [Tencent](#tencent), [Meituan](#meituan)
   - Answer: [AI Agent Loop](https://outcomeschool.com/blog/ai-agent-loop)
 
 ## Frontier AI Labs
@@ -1328,6 +1343,479 @@
 
 - Tell me about a model you shipped that made a measurable business difference, and one that did not.
 
+## Chinese Internet Companies
+
+> These are organised by group, but the difference between business units inside one group is large. Confirm the exact team before you prepare.
+>
+> For the Qwen model team, see [Alibaba (Qwen)](#alibaba-qwen) under [Frontier AI Labs](#frontier-ai-labs).
+
+### ByteDance
+
+> **Roles this covers:** LLM algorithm engineer (Seed / Doubao), AI agent application engineer, inference optimisation and infra, LLM for search and recommendation, TikTok AI engineer, AI coding (Trae) engineering.
+>
+> **Interview loop, as publicly reported:** Usually two or three technical rounds plus HR for interns and campus hires; around four rounds for experienced hires, roughly 3–5 weeks end to end. Round one leans on engineering and inference optimisation, round two on training and alignment (you are expected to explain, sometimes derive, GRPO and DPO), round three on project review and open-ended questions. Almost every round includes coding, and implementing MHA or MoE from scratch is the signature one. Interviewers routinely compare your project against Claude Code, Codex and Hermes.
+>
+> **Also prepare:** the [common questions](#common-questions-asked-across-companies) tagged ByteDance under [LLM Internals and Architecture](#llm-internals-and-architecture), [Inference, Serving and GPU Performance](#inference-serving-and-gpu-performance), [RAG and Retrieval](#rag-and-retrieval), [Agents and Tool Use](#agents-and-tool-use), [Fine-Tuning, Post-Training and Alignment](#fine-tuning-post-training-and-alignment), [Evaluation and Observability](#evaluation-and-observability), [AI System Design](#ai-system-design), [Coding and Data Structures](#coding-and-data-structures).
+
+#### LLM Internals and Architecture
+
+- Walk through self-attention end to end, and explain why the dot product is divided by sqrt(d_k).
+  - Answer: [Math behind Attention - Q, K, and V](https://outcomeschool.com/blog/math-behind-attention-qkv)
+- Trace the evolution from MHA to MQA, GQA and MLA. What does each step actually save?
+  - Answer: [Grouped Query Attention](https://outcomeschool.com/blog/grouped-query-attention) and [KV Cache Compression](https://outcomeschool.com/blog/kv-cache-compression)
+- How does Qwen3 switch between thinking and non-thinking mode? How do you train and serve one model that does both?
+  - Answer: [Large Reasoning Models (LRMs)](https://outcomeschool.com/blog/large-reasoning-models)
+- Can a decoder-only model beat an encoder-only one on a classification task?
+- Why does the FFN expand and then contract? What does SwiGLU buy you over ReLU or GELU?
+  - Answer: [Feed-Forward Networks in LLMs](https://outcomeschool.com/blog/feed-forward-networks-in-llms)
+
+#### Inference, Serving and GPU Performance
+
+- Take an 8x7B model: roughly what share of GPU memory goes to KV cache versus weights? What else occupies memory?
+  - Answer: [What is KV Cache in LLMs?](https://outcomeschool.com/blog/kv-cache-in-llms)
+- A prefix cache hits, but the KV blocks have been offloaded to SSD. What is the fetch path, and does it have to go through host memory on the way back to the GPU?
+  - Answer: [How does Prompt Caching work?](https://outcomeschool.com/blog/how-does-prompt-caching-work)
+- What do PagedAttention and continuous batching each solve in vLLM?
+  - Answer: [How does vLLM work?](https://outcomeschool.com/blog/how-does-vllm-work) and [Continuous Batching in LLMs](https://outcomeschool.com/blog/continuous-batching-in-llms)
+- Explain speculative decoding. Which models does it not help?
+  - Answer: [Speculative Decoding](https://outcomeschool.com/blog/speculative-decoding)
+- Why does prefill/decode disaggregation raise overall throughput, and when is it worth it for you?
+  - Answer: [Prefill-Decode Disaggregation in LLM Inference](https://outcomeschool.com/blog/prefill-decode-disaggregation)
+
+#### Fine-Tuning, Post-Training and Alignment
+
+- Explain GRPO. Is the KL term in GRPO the same as the one in PPO, and what changes when you put KL in the loss versus in the reward?
+  - Answer: [Group Relative Policy Optimization (GRPO)](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo) and [Proximal Policy Optimization (PPO)](https://outcomeschool.com/blog/proximal-policy-optimization-ppo)
+- Walk through the two stages of DeepSeek-R1. How are the reward function and reward model designed?
+  - Answer: [Large Reasoning Models (LRMs)](https://outcomeschool.com/blog/large-reasoning-models)
+- Are PPO and GRPO on-policy or off-policy? How is the PPO critic trained?
+- What causes reward hacking, how do you detect it, and which metrics do you watch during RL training when loss moves abnormally?
+  - Answer: [Reinforcement Learning from Human Feedback (RLHF)](https://outcomeschool.com/blog/reinforcement-learning-from-human-feedback-rlhf)
+- Can RLVR be considered a form of SFT? Why or why not?
+- Agentic RL: when do you move from SFT to RL, and when should a multi-turn reward come from a model versus a rule?
+
+#### RAG and Retrieval
+
+- Why run multi-way retrieval (dense + keyword + hierarchical)? What is the bad case for each route?
+  - Answer: [How does Hybrid Search work?](https://outcomeschool.com/blog/how-does-hybrid-search-work)
+- You retrieved 30 passages but only 6 fit the context budget. How do you choose?
+  - Answer: [How does a Reranker work?](https://outcomeschool.com/blog/how-does-a-reranker-work)
+- Permission-aware knowledge base: filter by ACL before retrieval, or after? How do you monitor and prove no unauthorised content was retrieved?
+- When should the system trigger a web search and when should it answer directly? How do you tell "the model did not know it needed retrieval" from "it knew but did not execute"?
+- How do you chunk and retrieve when a long document spans chapters and a retrieved fragment points at another document?
+  - Answer: [Chunking Strategies for RAG](https://outcomeschool.com/blog/chunking-strategies-for-rag)
+
+#### Agents and Tool Use
+
+- Where are the boundaries between Agent, Workflow, Orchestrator and Harness?
+  - Answer: [AI Orchestration](https://outcomeschool.com/blog/ai-orchestration) and [Harness Engineering in AI](https://outcomeschool.com/blog/harness-engineering-in-ai)
+- How do Function Calling, Tool, MCP and Skill differ? Why does a Skill save tokens, and what risk does that bring?
+  - Answer: [What is MCP (Model Context Protocol)?](https://outcomeschool.com/blog/what-is-mcp-model-context-protocol) and [How does Function Calling work in LLMs?](https://outcomeschool.com/blog/how-does-function-calling-work-in-llms)
+- How do you compress context as it approaches the window limit, and what must never be left to a summarising model?
+  - Answer: [How does context compaction work?](https://outcomeschool.com/blog/how-does-context-compaction-work) and [Context Engineering](https://outcomeschool.com/blog/context-engineering)
+- A production agent keeps calling tools but never returns. How do you debug it? How do you defend against reasoning-chain error propagation, tool hallucination, broken JSON and infinite loops?
+  - Answer: [AI Agent Loop](https://outcomeschool.com/blog/ai-agent-loop) and [Fixing infinite loops in AI agents](https://www.linkedin.com/posts/pallavi-shekhar_ai-aiagents-machinelearning-share-7440257380707364864-5Ycc)
+- How do multiple agents communicate, and how do you stop two of them editing the same file?
+  - Answer: [Multi-Agent Systems](https://outcomeschool.com/blog/multi-agent-systems) and [AI SubAgents](https://outcomeschool.com/blog/ai-subagents)
+- How do you define and measure a hallucination rate? How was that improvement number actually computed, and how do you tell stale content from hallucination?
+  - Answer: [LLM Evaluation](https://outcomeschool.com/blog/llm-evaluation) and [LLM as a Judge](https://outcomeschool.com/blog/llm-as-a-judge)
+
+#### AI System Design
+
+- Design an AI code review agent: input is a PR, it only comments, it never edits. What are the three things that matter most?
+  - Answer: [How does Claude Code work?](https://outcomeschool.com/blog/how-does-claude-code-work)
+- Design an enterprise knowledge base / local wiki agent: ingestion, permission isolation and evaluation in one story.
+- Design an ops and incident-triage agent: how does it run the full diagnostic flow when a payment endpoint times out, and how are high-risk actions controlled?
+- Design a content-tagging agent (video or image plus text): how do you split the pipeline and what do you take from the source material?
+
+#### Coding and Data Structures
+
+- Implement multi-head attention in PyTorch, then extend it to cross-attention.
+  - Answer: [Multi-Head Attention in Transformers](https://outcomeschool.com/blog/multi-head-attention-in-transformers)
+- Write a minimal ReAct agent: tool registration, loop control, termination condition and error handling.
+  - Answer: [ReAct Agent](https://outcomeschool.com/blog/react-agent) and [AI Agent Loop](https://outcomeschool.com/blog/ai-agent-loop)
+- Write context compaction or sliding-window summarisation: given a message list and a token budget, decide what to keep, summarise or offload.
+  - Answer: [How does context compaction work?](https://outcomeschool.com/blog/how-does-context-compaction-work)
+- Standard coding rounds also include merge intervals, top-k and longest substring without repeats.
+
+#### Behavioral and Culture
+
+- What paper have you read recently, and what is the core idea? How do you keep up with new LLM work?
+- What do you think about the alignment tax of LLM agents, and are current agents meeting your expectations?
+- Walk me through a project you owned end to end where you can explain exactly how the metric was computed.
+
+### Tencent
+
+> **Roles this covers:** Hunyuan LLM algorithm engineer, AI agent application engineer (Tencent Cloud / ads / meetings), multimodal algorithm engineer, LLM infra and inference engineer, AIGC application engineer.
+>
+> **Interview loop, as publicly reported:** Two technical rounds plus HR is typical for campus hires, three or four for experienced hires, with technical questions dominating. Round one is a deep project grilling (why this design, why not end-to-end, how many GPUs and what parallelism, how you tuned hyperparameters); round two is system design or a scenario. Hunyuan leans on models and training, application roles lean on RAG and agents, and MySQL, Redis and Kafka often appear in the same round as the AI questions. Note that a role can change team and end up testing something completely different.
+>
+> **Also prepare:** the [common questions](#common-questions-asked-across-companies) tagged Tencent under [LLM Internals and Architecture](#llm-internals-and-architecture), [Inference, Serving and GPU Performance](#inference-serving-and-gpu-performance), [RAG and Retrieval](#rag-and-retrieval), [Agents and Tool Use](#agents-and-tool-use), [Fine-Tuning, Post-Training and Alignment](#fine-tuning-post-training-and-alignment), [Multimodal, Speech and Voice AI](#multimodal-speech-and-voice-ai), [AI System Design](#ai-system-design), [Coding and Data Structures](#coding-and-data-structures).
+
+#### LLM Internals and Architecture
+
+- Why do generative LLMs use decoder-only rather than encoder-decoder?
+  - Answer: [Encoder vs Decoder in Transformers](https://outcomeschool.com/blog/encoder-vs-decoder-in-transformers)
+- What is the difference between pre-norm and post-norm, and how does it affect training stability?
+- How does RoPE achieve relative position awareness using an absolute position encoding?
+  - Answer: [Math Behind RoPE (Rotary Position Embedding)](https://outcomeschool.com/blog/math-behind-rope-rotary-position-embedding)
+- Why is everyone exploring MoE, and what is the core advantage over dense?
+  - Answer: [Mixture of Experts Explained](https://outcomeschool.com/blog/mixture-of-experts)
+- Take Qwen and DeepSeek as examples: introduce a model you know well and compare the two technically.
+
+#### Inference, Serving and GPU Performance
+
+- What is the core idea behind vLLM? What do PagedAttention and continuous batching each solve?
+  - Answer: [How does vLLM work?](https://outcomeschool.com/blog/how-does-vllm-work) and [Paged Attention in LLMs](https://outcomeschool.com/blog/paged-attention-in-llms)
+- What were the main improvements in FlashAttention v2 over v1?
+  - Answer: [Decoding Flash Attention](https://outcomeschool.com/blog/decoding-flash-attention)
+- How do you quality-check training data before it goes into a run?
+- Why do LLMs stream token by token, and what protocol sits underneath?
+  - Answer: [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
+- Where do you look to cut response latency in an API service?
+  - Answer: [Prefill vs Decode: LLM Inference Optimization](https://outcomeschool.com/blog/prefill-vs-decode-llm-inference-optimization)
+
+#### Fine-Tuning, Post-Training and Alignment
+
+- Compare RLHF, PPO and DPO: technical differences, trade-offs and when each applies.
+  - Answer: [Reinforcement Learning from Human Feedback (RLHF)](https://outcomeschool.com/blog/reinforcement-learning-from-human-feedback-rlhf) and [Direct Preference Optimization (DPO)](https://outcomeschool.com/blog/direct-preference-optimization-dpo)
+- Full fine-tuning versus LoRA versus QLoRA versus P-Tuning: how do you choose, and when does LoRA beat full fine-tuning in a recommendation setting?
+  - Answer: [LoRA - Low-Rank Adaptation of LLMs](https://outcomeschool.com/blog/lora-low-rank-adaptation-of-llms) and [How does Prefix Tuning work?](https://outcomeschool.com/blog/how-does-prefix-tuning-work)
+- How do you build reward-model training data, and how would you design the reward and advantage for GRPO?
+  - Answer: [Group Relative Policy Optimization (GRPO)](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
+- How would you improve a model's multi-turn conversation ability, across model, data, memory and decoding?
+
+#### RAG and Retrieval
+
+- Why use both sparse and dense retrieval in RAG, and how do you tune the weights in production?
+  - Answer: [How does Hybrid Search work?](https://outcomeschool.com/blog/how-does-hybrid-search-work)
+- What drives the choice of BGE as an embedding model, and how do you build and tune a FAISS index?
+  - Answer: [How does a Vector Database work?](https://outcomeschool.com/blog/how-does-a-vector-database-work) and [How does Approximate Nearest Neighbor (ANN) Search work?](https://outcomeschool.com/blog/how-does-approximate-nearest-neighbor-ann-search-work)
+- How do you chunk documents, and how do you trade chunk size against completeness?
+  - Answer: [Chunking Strategies for RAG](https://outcomeschool.com/blog/chunking-strategies-for-rag)
+- What if one generation has to reason across several documents?
+- Beyond truncation, what are better ways to compress a long conversation?
+  - Answer: [How does context compaction work?](https://outcomeschool.com/blog/how-does-context-compaction-work)
+
+#### Agents and Tool Use
+
+- Claude Code already exists, so why build your own coding agent? What differs, and how do you design layered context?
+  - Answer: [How does Claude Code work?](https://outcomeschool.com/blog/how-does-claude-code-work)
+- How do you design an agent's assembly and execution chain, and how does it degrade gracefully?
+  - Answer: [AI Orchestration](https://outcomeschool.com/blog/ai-orchestration)
+- A sub-agent discovers it needs an extra task mid-execution. How should that task flow and get approved?
+- How do you constrain an agent's permissions to avoid unauthorised actions, especially anything touching real money?
+- Walk through ReAct: workflow, pros and cons, and how the loop avoids infinite or premature exit.
+  - Answer: [ReAct Agent](https://outcomeschool.com/blog/react-agent) and [AI Agent Loop](https://outcomeschool.com/blog/ai-agent-loop)
+- How do you govern token cost: monitoring, attribution, quotas or caching?
+  - Answer: [How does Semantic Caching work?](https://outcomeschool.com/blog/how-does-semantic-caching-work)
+
+#### Multimodal, Speech and Voice AI
+
+- How do multimodal models align images and text? How does "a dog playing on the grass" get matched to the right picture?
+  - Answer: [Multimodal AI](https://outcomeschool.com/blog/multimodal-ai) and [Decoding Vision Transformer (ViT)](https://outcomeschool.com/blog/decoding-vision-transformer-vit)
+- Image token counts blow up quickly. How do you reduce them, and how should audio or video be represented?
+- How does CLIP get zero-shot ability, and how does an embedding model's training loss differ from a reranker's?
+  - Answer: [How do Image Embeddings work?](https://outcomeschool.com/blog/how-do-image-embeddings-work)
+
+#### AI System Design
+
+- Design an end-to-end AI development platform covering training, fine-tuning, evaluation, deployment and serving. How do you layer it?
+- Design a router that picks a model per task: should complex and simple tasks use different tiers?
+  - Answer: [LLM Routing](https://outcomeschool.com/blog/llm-routing)
+- Design an e-commerce customer-support agent or a stock-analysis agent end to end.
+- When LLM capability is wired into many products, how do you split responsibility between the platform team and the product teams?
+
+#### Coding and Data Structures
+
+- Generate parentheses: produce all valid combinations of n pairs.
+- Given an array of positive integers, find the maximum sum of elements divisible by 3 (explaining the approach is enough).
+- Write the full self-attention formula on the spot, including matrix shapes.
+  - Answer: [Math behind Attention - Q, K, and V](https://outcomeschool.com/blog/math-behind-attention-qkv)
+
+#### Behavioral and Culture
+
+- Which takes off first, consumer agents or enterprise agents? What shape do you think agents take next?
+- How is AI changing software engineering, and which AI coding tools do you actually use?
+
+### Alibaba (Taobao/Tmall, Alibaba Cloud)
+
+> **Roles this covers:** Taobao/Tmall and Shangou agent algorithms, Alibaba Cloud AI platform and Lingyang runtime engineering, Quark and Qwen application development, Alibaba International (Accio) search and cloud sandbox, DingTalk AI engineering.
+>
+> **Interview loop, as publicly reported:** Two or three technical rounds, a cross-examination round with a senior manager, and HR. Alibaba Cloud leans on runtime, permissions and observability; Taobao/Tmall on business flows, AI coding, concurrency and online metrics; Quark and Qwen on a model-plus-application stack; Alibaba International on search, cloud sandboxes, long-running tasks and cost. Some Alibaba Cloud loops now have you build a feature with AI coding and then review it by hand.
+>
+> **Also prepare:** the [common questions](#common-questions-asked-across-companies) tagged Alibaba under [LLM Internals and Architecture](#llm-internals-and-architecture), [Inference, Serving and GPU Performance](#inference-serving-and-gpu-performance), [RAG and Retrieval](#rag-and-retrieval), [Agents and Tool Use](#agents-and-tool-use), [Fine-Tuning, Post-Training and Alignment](#fine-tuning-post-training-and-alignment), [Evaluation and Observability](#evaluation-and-observability), [AI System Design](#ai-system-design), [Coding and Data Structures](#coding-and-data-structures).
+
+#### LLM Internals and Architecture
+
+- How does MoE work, how do you balance load, and is expert activation a batch-level, token-level or other decision? Implement a MoE in Python.
+  - Answer: [Mixture of Experts Explained](https://outcomeschool.com/blog/mixture-of-experts)
+- NCCL timeouts are common in thousand-GPU training. How do you locate and fix them?
+- How do you do kernel fusion, and why can fusion make things slower? What is warp specialization on Hopper?
+  - Answer: [Decoding Flash Attention](https://outcomeschool.com/blog/decoding-flash-attention)
+- How does KV cache access differ between prefill and decode?
+  - Answer: [What is KV Cache in LLMs?](https://outcomeschool.com/blog/kv-cache-in-llms) and [Prefill vs Decode: LLM Inference Optimization](https://outcomeschool.com/blog/prefill-vs-decode-llm-inference-optimization)
+
+#### Fine-Tuning, Post-Training and Alignment
+
+- What post-training stages come after SFT, and what is each for?
+  - Answer: [How does fine-tuning work?](https://outcomeschool.com/blog/how-does-fine-tuning-work)
+- Explain the GRPO loss. Why move to GRPO instead of staying with SFT?
+  - Answer: [Group Relative Policy Optimization (GRPO)](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
+- How is advantage computed, why not use reward directly, and why is importance sampling needed?
+- Credit assignment: how does a sequence-level reward get distributed across tokens in GRPO?
+- What does DPO improve over PPO, and what should you watch out for when training it?
+  - Answer: [Direct Preference Optimization (DPO)](https://outcomeschool.com/blog/direct-preference-optimization-dpo)
+- When do you tune the prompt and when do you fine-tune? How do you decide between RAG and fine-tuning for a customer?
+
+#### RAG and Retrieval
+
+- How do chunking, BM25 plus dense hybrid retrieval, multi-hop retrieval and query rewriting fit into one pipeline?
+  - Answer: [How does Hybrid Search work?](https://outcomeschool.com/blog/how-does-hybrid-search-work) and [How does a Reranker work?](https://outcomeschool.com/blog/how-does-a-reranker-work)
+- Design an enterprise knowledge base with ACLs and PII. Where does permission filtering live?
+- How do long-conversation summarisation and the harness data flow fit together?
+  - Answer: [How does context compaction work?](https://outcomeschool.com/blog/how-does-context-compaction-work)
+
+#### Agents and Tool Use
+
+- Where is the line between the agent loop and the harness, and how do you early-stop a long-running task?
+  - Answer: [AI Agent Loop](https://outcomeschool.com/blog/ai-agent-loop) and [Harness Engineering in AI](https://outcomeschool.com/blog/harness-engineering-in-ai)
+- What is the relationship between MCP and A2A, and how should a multi-agent communication protocol be designed?
+  - Answer: [What is MCP (Model Context Protocol)?](https://outcomeschool.com/blog/what-is-mcp-model-context-protocol)
+- The model returns a function call with malformed arguments. What do you do?
+  - Answer: [How does Function Calling work in LLMs?](https://outcomeschool.com/blog/how-does-function-calling-work-in-llms)
+- What does multi-agent coordination buy over a single agent, and how does the lead agent pick a sub-agent dynamically?
+  - Answer: [Multi-Agent Systems](https://outcomeschool.com/blog/multi-agent-systems)
+- What dimensions does an agent evaluation need, and how do you measure planning ability versus hallucination rate?
+  - Answer: [AI Agent Evaluation](https://outcomeschool.com/blog/ai-agent-evaluation)
+
+#### AI System Design
+
+- Design a code review agent that only comments and never edits.
+- Design an e-commerce agent system with HITL, risk tiers, circuit breakers, sandboxing and audit.
+- Design an e-commerce support agent: how does it handle vague user requests, what does it say when a product cannot be retrieved, and what is the core success metric?
+- Design the full pipeline from document upload to retrievable, and say where incremental update time goes.
+
+#### Coding and Data Structures
+
+- You build a feature with AI coding and then review it by hand. How do you prove the change is correct and has not broken existing behaviour?
+- What are the time complexities of common Python list and dict operations, and why is insert at the head O(n)?
+- When does a MySQL composite index stop being used? What is the leftmost-prefix rule, and what do you look at in EXPLAIN?
+
+#### Behavioral and Culture
+
+- Alibaba open-sources Qwen while running a commercial cloud business. What do you make of that strategy?
+- Walk me through a project you took from a vague requirement to delivery, and the reasoning behind your decisions.
+
+### DiDi
+
+> **Roles this covers:** AI engineer on the ride-hailing platform, LLM algorithms for customer service and driver support, LLM application engineering, data and platform engineering.
+>
+> **Interview loop, as publicly reported:** Two or three technical rounds plus HR. The first round is often around 40 minutes and is dominated by project grilling plus one scenario design question. Backend fundamentals (MySQL indexes and slow queries, Elasticsearch, Redis) frequently appear in the same round as the AI questions, and customer-service or driver-assistant scenarios are the usual vehicle.
+>
+> **Also prepare:** the [common questions](#common-questions-asked-across-companies) tagged DiDi under [LLM Internals and Architecture](#llm-internals-and-architecture), [RAG and Retrieval](#rag-and-retrieval), [Agents and Tool Use](#agents-and-tool-use), [AI System Design](#ai-system-design), [Coding and Data Structures](#coding-and-data-structures).
+
+#### LLM Internals and Architecture
+
+- What does the FFN layer in a Transformer do, and why does it expand before contracting?
+  - Answer: [Feed-Forward Networks in LLMs](https://outcomeschool.com/blog/feed-forward-networks-in-llms)
+- Compare MHA, MQA, GQA and MLA: pros and cons of each.
+  - Answer: [Grouped Query Attention](https://outcomeschool.com/blog/grouped-query-attention) and [KV Cache Compression](https://outcomeschool.com/blog/kv-cache-compression)
+- Compare PPO, DPO and GRPO, and write down the SFT loss.
+  - Answer: [Reinforcement Learning from Human Feedback (RLHF)](https://outcomeschool.com/blog/reinforcement-learning-from-human-feedback-rlhf) and [Group Relative Policy Optimization (GRPO)](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
+- How do you build the loss mask for multi-turn message training?
+
+#### RAG and Retrieval
+
+- Why introduce RAG at all? Which LLM problems does it actually solve?
+- Where did your data come from and how was it constructed? Walk me through chunking, retrieval and evaluation.
+  - Answer: [Chunking Strategies for RAG](https://outcomeschool.com/blog/chunking-strategies-for-rag)
+- Would you put a driver's history and preferences into a knowledge base (RAG) or into fine-tuning? Why?
+- In Elasticsearch, how do you balance indexing depth against query speed, and do you need hot/cold separation?
+- If you use Elasticsearch as a vector store, how do you combine vector and keyword search?
+  - Answer: [How does Hybrid Search work?](https://outcomeschool.com/blog/how-does-hybrid-search-work)
+
+#### Agents and Tool Use
+
+- Design a smart driver dispatch assistant: order in, accept-or-skip recommendation with reasons out. What is the architecture, and what factors drive the decision?
+- In a stack-trace-to-code-location pipeline, is the LLM interaction single-turn or multi-turn? Why?
+- What do you do when the agent hallucinates and points at the wrong code, or when a file exceeds the context window?
+  - Answer: [How does context compaction work?](https://outcomeschool.com/blog/how-does-context-compaction-work)
+- How do you measure a diagnostic agent's accuracy, and can that validation loop be automated?
+  - Answer: [AI Agent Evaluation](https://outcomeschool.com/blog/ai-agent-evaluation)
+
+#### AI System Design
+
+- Design a customer-service agent that can look up orders, issue coupons and handle complaints. How do planning, tool calling, memory and execution verification each land?
+- How do you check the quality and accuracy of LLM answers, and how do you trust a checker agent that hallucinates too?
+  - Answer: [LLM Evaluation](https://outcomeschool.com/blog/llm-evaluation) and [LLM as a Judge](https://outcomeschool.com/blog/llm-as-a-judge)
+- In an LLM service, how do you cut hallucination, control cost and hold p95? Which lever do you pull first?
+
+#### Coding and Data Structures
+
+- Implement multi-head self-attention from scratch.
+  - Answer: [Multi-Head Attention in Transformers](https://outcomeschool.com/blog/multi-head-attention-in-transformers)
+- How do you debug a slow MySQL query? What do you read in EXPLAIN, and when does a composite index stop working?
+- How does SSE work, and what do you watch out for when streaming with it?
+  - Answer: [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
+
+#### Behavioral and Culture
+
+- Which channels do you use to keep up with new AI techniques, products and developments?
+- Tell me about taking an AI feature from zero to production, and what went wrong along the way.
+
+### JD.com
+
+> **Roles this covers:** LLM algorithm engineer (retail, logistics, JD Technology), AI agent application engineer, agent runtime and platform engineering, product understanding and multimodal.
+>
+> **Interview loop, as publicly reported:** Two or three technical rounds plus HR. Platform job descriptions now list agent runtime, context state, tool and plugin registration, streaming, semantic cache, circuit breaking, eval and replay, and end-to-end tracing as explicit responsibilities. Technical rounds mix backend depth (Java/Go, Redis plus Lua, message queues, concurrency) with agent questions, and commercial judgement about how the model moves a retail metric is weighted heavily.
+>
+> **Also prepare:** the [common questions](#common-questions-asked-across-companies) tagged JD.com under [LLM Internals and Architecture](#llm-internals-and-architecture), [Inference, Serving and GPU Performance](#inference-serving-and-gpu-performance), [RAG and Retrieval](#rag-and-retrieval), [Agents and Tool Use](#agents-and-tool-use), [Fine-Tuning, Post-Training and Alignment](#fine-tuning-post-training-and-alignment), [AI System Design](#ai-system-design), [Coding and Data Structures](#coding-and-data-structures).
+
+#### Fine-Tuning, Post-Training and Alignment
+
+- Compare RLHF, RLAIF, DPO, IPO and KTO: principles, pipelines, trade-offs, and which you would pick for e-commerce.
+  - Answer: [Reinforcement Learning from Human Feedback (RLHF)](https://outcomeschool.com/blog/reinforcement-learning-from-human-feedback-rlhf) and [Direct Preference Optimization (DPO)](https://outcomeschool.com/blog/direct-preference-optimization-dpo)
+- How do you design the reward function for LLM RL, and how would you build a high-quality reward signal for product dialogue or recommendation?
+  - Answer: [Group Relative Policy Optimization (GRPO)](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
+- How do you debug the usual instabilities in RL training of LLMs?
+- Compare full fine-tuning, LoRA and QLoRA and justify your choice with what actually shipped.
+  - Answer: [LoRA - Low-Rank Adaptation of LLMs](https://outcomeschool.com/blog/lora-low-rank-adaptation-of-llms) and [How does fine-tuning work?](https://outcomeschool.com/blog/how-does-fine-tuning-work)
+- How does context window length affect performance, and how do you push past the window limit?
+
+#### Inference, Serving and GPU Performance
+
+- Which inference optimisation tools have you used (TensorRT, vLLM)? How do they work and what was the experience?
+  - Answer: [How does vLLM work?](https://outcomeschool.com/blog/how-does-vllm-work) and [How does TensorRT-LLM work?](https://outcomeschool.com/blog/how-does-tensorrt-llm-work)
+- How do you handle hundreds of millions of records: cleaning, preprocessing, efficient loading, and the traps you hit?
+- A model degrades in production, worse quality or higher latency. Walk me through the full diagnosis.
+
+#### RAG and Retrieval
+
+- Why do you need a reranker, and when can you skip it?
+  - Answer: [How does a Reranker work?](https://outcomeschool.com/blog/how-does-a-reranker-work)
+- How do you evaluate recall and precision for hybrid retrieval, and should RRF's k be larger or smaller?
+  - Answer: [How does Hybrid Search work?](https://outcomeschool.com/blog/how-does-hybrid-search-work)
+- Using Elasticsearch as a vector store, how do you combine vector and keyword retrieval, and how do you shard RAG?
+- Design the degradation strategy for a RAG service. What triggers it?
+- Which database do you use for agent memory, and why?
+  - Answer: [AI Agent Memory](https://outcomeschool.com/blog/ai-agent-memory)
+
+#### Agents and Tool Use
+
+- How does function calling work, and how does the model know which tool to call?
+  - Answer: [How does Function Calling work in LLMs?](https://outcomeschool.com/blog/how-does-function-calling-work-in-llms)
+- How do MCP and Skills differ, and how do you think about prompts, MCP, skills and subagents?
+  - Answer: [What is MCP (Model Context Protocol)?](https://outcomeschool.com/blog/what-is-mcp-model-context-protocol)
+- How do you constrain agent permissions to avoid unauthorised actions, especially around money?
+- What do you do when multiple agents disagree or play conflicting roles?
+- Why Spring AI over LangChain4j, and how do you adapt agent frameworks on the Java side?
+
+#### AI System Design
+
+- Why build a unified LLM service layer instead of calling model APIs directly?
+  - Answer: [LLM Routing](https://outcomeschool.com/blog/llm-routing)
+- Design an alerting agent: inputs, outputs, how you stay accurate during holidays and release windows, and the non-AI fallback.
+- Design incremental updates for a RAG system over thousands of pages and gigabytes of multimodal documents.
+- Design an AI development platform spanning training, evaluation, deployment and serving. How do you layer it?
+
+#### Coding and Data Structures
+
+- Level-order traversal of a binary tree.
+- Implement an LRU cache.
+- How do you handle high concurrency when deploying an LLM, and which tools do you reach for?
+
+#### Behavioral and Culture
+
+- How do you connect LLMs to your business surface (recommendation, retrieval, semantic understanding), and what was genuinely novel in your work?
+- Walk me through a postmortem where online results missed expectations. How did you locate the cause?
+
+### Meituan
+
+> **Roles this covers:** LLM algorithms (Beidou, in-store, delivery), agent application development, multimodal and document LLMs, LLM for search and recommendation.
+>
+> **Interview loop, as publicly reported:** Two technical rounds plus HR for campus hires, more for experienced hires. The questioning pattern is very stable: why this choice, what was the alternative, how did you verify it, and how do you find the remaining one or two percent of bad cases. Multiple candidates independently report a mix of LLM multiple-choice questions, algorithms and AI coding. The official agent platform emphasises long-running tasks, skills and subagents, cross-session memory, credential isolation, sandboxing and end-to-end observability.
+>
+> **Also prepare:** the [common questions](#common-questions-asked-across-companies) tagged Meituan under [LLM Internals and Architecture](#llm-internals-and-architecture), [Inference, Serving and GPU Performance](#inference-serving-and-gpu-performance), [RAG and Retrieval](#rag-and-retrieval), [Agents and Tool Use](#agents-and-tool-use), [Fine-Tuning, Post-Training and Alignment](#fine-tuning-post-training-and-alignment), [Evaluation and Observability](#evaluation-and-observability), [AI System Design](#ai-system-design), [Coding and Data Structures](#coding-and-data-structures).
+
+#### LLM Internals and Architecture
+
+- Walk through the Transformer, and explain why the encoder needs an FFN.
+- Which attention variants do you know? Write the self-attention formula on the spot.
+  - Answer: [Math behind Attention - Q, K, and V](https://outcomeschool.com/blog/math-behind-attention-qkv) and [Self Attention in Transformers](https://outcomeschool.com/blog/self-attention-in-transformers)
+- How does MLA reduce the KV cache?
+  - Answer: [KV Cache Compression](https://outcomeschool.com/blog/kv-cache-compression)
+- How does Qwen extrapolate to longer contexts (NTK-aware scaling, YaRN)?
+  - Answer: [Math Behind RoPE (Rotary Position Embedding)](https://outcomeschool.com/blog/math-behind-rope-rotary-position-embedding)
+- How does MoE work, how is load balanced, and is activation a batch-level or token-level decision? Implement a MoE in Python.
+  - Answer: [Mixture of Experts Explained](https://outcomeschool.com/blog/mixture-of-experts)
+
+#### Inference, Serving and GPU Performance
+
+- What is the difference between bf16 and fp16, how many bits is each, and how do you choose precision in training?
+  - Answer: [How does Model Quantization work?](https://outcomeschool.com/blog/how-does-model-quantization-work)
+- What memory optimisation strategies exist for attention computation?
+  - Answer: [What is KV Cache in LLMs?](https://outcomeschool.com/blog/kv-cache-in-llms) and [Paged Attention in LLMs](https://outcomeschool.com/blog/paged-attention-in-llms)
+- What is the core difference between ZeRO-2 and ZeRO-3 in distributed training?
+- Why do LLMs stream token by token, and what protocol is underneath?
+  - Answer: [How does Token Streaming work?](https://outcomeschool.com/blog/how-does-token-streaming-work)
+
+#### Fine-Tuning, Post-Training and Alignment
+
+- How does LoRA work, and which hyperparameters did you tune and what did you learn?
+  - Answer: [LoRA - Low-Rank Adaptation of LLMs](https://outcomeschool.com/blog/lora-low-rank-adaptation-of-llms)
+- How do you compute the SFT loss only over the answer, ignoring padding?
+- Why GRPO in your project rather than PPO or DPO? How did you design the reward, including factuality and safety?
+  - Answer: [Group Relative Policy Optimization (GRPO)](https://outcomeschool.com/blog/group-relative-policy-optimization-grpo)
+- Fine-tuning produces a model that repeats itself. What is happening and how do you debug it?
+  - Answer: [Continual Learning in LLMs](https://outcomeschool.com/blog/continual-learning-in-llms)
+- Walk through the full post-training recipe: pretraining, SFT, reward model, RL, domain adaptation.
+  - Answer: [Decoding InstructGPT](https://outcomeschool.com/blog/decoding-instructgpt)
+- In PPO, how do you prevent loss of generality and stop the model collapsing onto one high-reward answer?
+
+#### RAG and Retrieval
+
+- How does BM25 work, and why add dense retrieval on top?
+  - Answer: [How does Hybrid Search work?](https://outcomeschool.com/blog/how-does-hybrid-search-work)
+- Long reviews are summarised before indexing. How do you make sure the summary does not lose information, and how do multi-level summaries plus source quotes fit?
+- p95 latency jumps in production. How do you debug it?
+- RAG recall is too low. What do you do, and how do you tell a retrieval problem from a generation problem?
+  - Answer: [LLM Evaluation](https://outcomeschool.com/blog/llm-evaluation)
+
+#### Agents and Tool Use
+
+- What is your understanding of function calling, and how do you train tool-use ability? What goes in the training set and where does the data come from?
+  - Answer: [How does Function Calling work in LLMs?](https://outcomeschool.com/blog/how-does-function-calling-work-in-llms)
+- Two tools can satisfy one query. How do you design the training data for that?
+- How does a lead agent dynamically pick a sub-agent, and should sub-agents run serially or in parallel?
+  - Answer: [Multi-Agent Systems](https://outcomeschool.com/blog/multi-agent-systems)
+- Why should agent capabilities be disclosed progressively?
+- What are OpenClaw and Manus, why did they take off, and how do they differ?
+  - Answer: [Harness Engineering in AI](https://outcomeschool.com/blog/harness-engineering-in-ai)
+- Beyond tool descriptions, how do you stop an agent calling the wrong tool?
+
+#### AI System Design
+
+- RAG versus reading the file in a long context: when is each right? How does that compare with a coding agent grepping the repo?
+  - Answer: [The Lost in the Middle Problem in LLMs](https://outcomeschool.com/blog/lost-in-the-middle-problem-in-llms) and [How does Claude Code work?](https://outcomeschool.com/blog/how-does-claude-code-work)
+- A QA system goes live: break down the end-to-end time from query to answer and say where the budget goes.
+- Design a summarisation plus retrieval system over merchant reviews (hierarchical summaries).
+- Design a customer-support agent for in-store or delivery, and name the core metrics.
+
+#### Coding and Data Structures
+
+- Reverse nodes in k-group.
+- Level-order traversal of a binary tree, and zigzag level order.
+- Implement multi-head attention or a MoE by hand (the signature coding round for algorithm roles).
+  - Answer: [Multi-Head Attention in Transformers](https://outcomeschool.com/blog/multi-head-attention-in-transformers)
+
+#### Behavioral and Culture
+
+- Tell me about a time you actually moved a model's online results: what was the baseline and how was the metric computed?
+- How do you find the last one or two percent of hallucinations, and what can you honestly claim without an online A/B?
+
+---
+
 ## AI Infrastructure and Platform Companies
 
 ### Databricks
@@ -2025,6 +2513,18 @@
 
 - Why Palantir, and why this team? Tell me about a time you pushed back on a customer request.
 - Palantir works with defence and intelligence agencies. How do you think about that, and what would you do if asked to build something you're uncomfortable with?
+
+---
+
+## Prepared and maintained by Outcome School
+
+<div align="center">
+
+AI and Machine Learning Program by Outcome School: [AI and Machine Learning Program](https://outcomeschool.com/program/ai-and-machine-learning)
+
+[YouTube](https://youtube.com/@OutcomeSchool) • [X/Twitter](https://x.com/outcome_school) • [LinkedIn](https://www.linkedin.com/company/outcomeschool) • [GitHub](https://github.com/OutcomeSchool)
+
+</div>
 
 ---
 
